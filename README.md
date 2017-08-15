@@ -95,7 +95,7 @@ HOWTO install from Visual Studio.
 
   -In the Task Manager Window go to the Services tab
 
-  -You should see a service names "IndeedSample" right click it and click on "Start", this will start your service
+  -You should see a service named "IndeedSample" right click it and click on "Start", this will start your service
 
 
 ***You can stop this service by performing a right click on it and clicking on "Stop"
