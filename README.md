@@ -10,7 +10,8 @@ To install this
 
 ### Prerequisites
 
-Visual Studio. This program was written and tested from the Visual Studio 2015 version.
+This program was written and tested from the Visual Studio 2015 version.
+You will also need an email address that can be accessed from this program.
 
 ```
 Give examples
@@ -18,73 +19,72 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+HOWTO install from Visual Studio.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
+  1. Go to File-> Open -> Open from Source Control
+  2. In Team Explorer Window
+    - Local Git Repositories
+    - Click Clone
+    - Enter the URL of this project
+    - Click Clone
+  The Project Solution should now open in your Visual Studios Window.
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Running Program
 
-Explain how to run the automated tests for this system
+This program can be run directly from the Visual Studios window. And by installing it as a Windows Service.
 
-### Break down into end to end tests
+### First
 
-Explain what these tests test and why
+Open the SimpleParams.cs file
+Here you can edit the parameters for this program. Like the Email authentication, time interval, and email message, etc..
+Make sure to save and "Build Solution"
+  -Build -> Build Solution
 
-```
-Give an example
-```
+### Run from Visual Studio
 
-### And coding style tests
+At your Visual Studios toolbar, make sure the mode is set to "Debug" and then you can click start and the program will begin.
 
-Explain what these tests test and why
+### To run and install this as a Windows Service
 
-```
-Give an example
-```
+At your Visual Studios toolbar, make sure the mode is set to "Release"
+Make sure to save and "Build Solution"
+  -Build -> Build Solution
+  
+In your Solution Explorer window, Right Click on the "IndeedSample" solution name.
+Then click "Open Folder in File Explorer"
+In the newly opened File Explorer window you should see files and folders for this project.
+Go to the "bin" folder
+Then open the "Release" folder.
+Copy the Link to this folder. (ex: C:\Users\User\Documents\visual studio 2015\Projects\IndeedSample\IndeedSample\bin\Release)
+Open a Developer Command Propmt and make sure to "Run as Administrator"
 
-## Deployment
+From the Developer Command Prompt
+type "cd " and then perform a "CTRL+V" to paste the Release folder link
+Click enter
 
-Add additional notes about how to deploy this on a live system
+You can now check to make sure you are in the correct folder by typing in the command "dir"
+  This should display all the files and folders in this directory. One of those files should be "IndeedSample.exe"
 
-## Built With
+now type in this command "installutil IndeedSample.exe"
+You should see a message that ends with "The transacted install has completed"
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+***You can uninstall this service by typing the command "installutil /u IndeedSample.exe"
 
-## Contributing
+To start this Service you must open the Task Manager on your computer.
+In the Task Manager Window go to the Services tab
+You should see a service names "IndeedSample" right click it and click on "Start", this will start your service
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+***You can stop this service by performing a right click on it and clicking on "Stop"
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Daniel Wallengren** 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
 
