@@ -6,18 +6,17 @@ The email authentication and other parameters are easily editable in a single cl
 
 ## Getting Started
 
-To install this
-
 ### Prerequisites
 
 This program was written and tested from the Visual Studio 2015 version.
 
 You will also need an email address that can be accessed from this program.
 
-Make sure you email provider is set to "Allow apps that use less secure sign in"
+Make sure your email provider is set to "Allow apps that use less secure sign in"
 
 -Yahoo: https://help.yahoo.com/kb/SLN27791.html
--Gamil: https://support.google.com/accounts/answer/6010255?hl=en
+
+-Gmail: https://support.google.com/accounts/answer/6010255?hl=en
 
 ### Installing
 
