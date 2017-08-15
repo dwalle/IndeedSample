@@ -43,7 +43,7 @@ HOWTO install from Visual Studio.
 
   Make sure to save and "Build Solution"
 
-    Build -> Build Solution
+  Build -> Build Solution
 
 ### Run from Visual Studio
 
@@ -55,7 +55,7 @@ HOWTO install from Visual Studio.
 
   Make sure to save and "Build Solution"
 
-    Build -> Build Solution
+  Build -> Build Solution
   
   In your Solution Explorer window, Right Click on the "IndeedSample" solution name.
 
