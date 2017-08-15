@@ -28,6 +28,7 @@ HOWTO install from Visual Studio.
     - Click Clone
     - Enter the URL of this project
     - Click Clone
+  
   The Project Solution should now open in your Visual Studios Window.
 
 ## Running Program
