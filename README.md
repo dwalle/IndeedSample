@@ -43,7 +43,7 @@ HOWTO install from Visual Studio.
 
   Make sure to save and "Build Solution"
 
-    -Build -> Build Solution
+    Build -> Build Solution
 
 ### Run from Visual Studio
 
@@ -55,7 +55,7 @@ HOWTO install from Visual Studio.
 
   Make sure to save and "Build Solution"
 
-    -Build -> Build Solution
+    Build -> Build Solution
   
   In your Solution Explorer window, Right Click on the "IndeedSample" solution name.
 
@@ -80,7 +80,7 @@ HOWTO install from Visual Studio.
 
   -You can now check to make sure you are in the correct folder by typing in the command "dir"
 
-    -This should display all the files and folders in this directory. One of those files should be "IndeedSample.exe"
+   This should display all the files and folders in this directory. One of those files should be "IndeedSample.exe"
   
 
   -now type in this command "installutil IndeedSample.exe"
